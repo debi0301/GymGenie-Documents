@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymGenie - 法的文書</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .logo {
+            font-size: 48px;
+            font-weight: bold;
+            background: linear-gradient(135deg, #F5A623 0%, #F97316 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #9CA3AF;
+        }
+
+        .documents {
+            display: grid;
+            gap: 20px;
+        }
+
+        .document-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(245, 166, 35, 0.2);
+            border-radius: 16px;
+            padding: 30px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .document-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(245, 166, 35, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .document-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #F5A623;
+        }
+
+        .document-description {
+            font-size: 14px;
+            color: #9CA3AF;
+            line-height: 1.6;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 80px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #9CA3AF;
+            font-size: 14px;
+        }
+
+        .warning {
+            background: rgba(245, 166, 35, 0.1);
+            border-left: 4px solid #F5A623;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+
+        .warning-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #F5A623;
+        }
+
+        .warning-text {
+            font-size: 14px;
+            color: #D1D5DB;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">GymGenie</div>
+            <div class="subtitle">法的文書・公開資料</div>
+        </div>
+
+        <div class="warning">
+            <div class="warning-title">⚠️ 重要なお知らせ</div>
+            <div class="warning-text">
+                以下の文書は現在準備中です。実際の運営者情報が記載されるまで、参考資料としてご覧ください。
+            </div>
+        </div>
+
+        <div class="documents">
+            <a href="Legal/利用規約.md" class="document-card">
+                <div class="document-title">📄 利用規約</div>
+                <div class="document-description">
+                    GymGenieアプリの利用条件、ユーザーの責任、医療免責事項、サブスクリプション規約等を定めた文書です。
+                </div>
+            </a>
+
+            <a href="Legal/プライバシーポリシー.md" class="document-card">
+                <div class="document-title">🔒 プライバシーポリシー</div>
+                <div class="document-description">
+                    個人情報の収集・利用・保護に関する方針、OpenAI APIの利用、データの保存場所等について説明しています。
+                </div>
+            </a>
+
+            <a href="Legal/特定商取引法に基づく表記.md" class="document-card">
+                <div class="document-title">🏢 特定商取引法に基づく表記</div>
+                <div class="document-description">
+                    有料サブスクリプション販売に関する法的表記。事業者情報、価格、返品ポリシー等を記載しています。
+                </div>
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>© 2025 GymGenie. All Rights Reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="https://github.com/debi0301/GymGenie-Documents" style="color: #F5A623; text-decoration: none;">
+                    GitHub Repository
+                </a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
